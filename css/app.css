@@ -1,0 +1,78 @@
+*  {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.body-sub-container {
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: calc(100vh - 84px);
+}
+
+footer {
+    height: 84px;
+    background-color: bisque;
+}
+
+.card {
+    position: relative;
+}
+
+.username, .sticker-view, .enlarge{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+/* Posizione Stickers */
+.username {
+    bottom: 4%;
+}
+
+.enlarge {
+    top: 0%;
+    right: 0%;
+}
+
+.sticker-view{
+    top: 0%;
+    right: 1%;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-section{
+    display: flex;
+}
+
+button {
+    color: white;
+    background-color: #222222;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+
+.function{
+    display: flex;
+    flex-direction: column;
+}
+
+#greenicon {
+    color: #4BC800;
+}

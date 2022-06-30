@@ -25,6 +25,17 @@ footer {
     position: relative;
 }
 
+.card img{
+    aspect-ratio: 244/143;
+}
+
+.col-card{
+    flex-basis: 0;
+    flex-grow: 1;
+    height: calc((100vh - 84px )/5);
+    width: calc(100vw/7);
+}
+
 .username, .sticker-view, .enlarge{
     color: white;
     background-color: rgba(0, 0, 0, 0.2);
@@ -46,16 +57,24 @@ footer {
     right: 1%;
 }
 
+
+/* contenitore utenti */
+.row-card{
+    display: flex;
+    flex-wrap: wrap;
+}
 /* Footer */
 
 footer {
     display: flex;
     justify-content: space-between;
+    background-color: #222222;
     
 }
 
 .footer-section{
     display: flex;
+    column-gap: 40px;
 }
 
 button {
@@ -65,6 +84,8 @@ button {
     display: flex;
     height: 100%;
     align-items: center;
+    column-gap: 20px;
+    border: none;
 
 }
 
@@ -75,4 +96,12 @@ button {
 
 #greenicon {
     color: #4BC800;
+}
+
+#end {
+    color: red;
+}
+
+button i {
+    font-size: 26px;
 }
